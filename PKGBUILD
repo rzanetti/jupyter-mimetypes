@@ -14,17 +14,17 @@ depends=(
     'python-pyarrow'
     'python-typing_extensions'
 )
-source=(
-    "jupyter_mimetypes-$pkgver.tar.gz::https://files.pythonhosted.org/packages/source/g/jupyter-mimetypes/jupyter_mimetypes-$pkgver.tar.gz"
+makedepends=(
+    'python-installer'
 )
-sha256sums=('SKIP')
-
-build() {
-    cd "jupyter_mimetypes-$pkgver"
-    python -m build --wheel --no-isolation
-}
-
+source=(
+    "jupyter_mimetypes-$pkgver-py3-none-any.whl::https://files.pythonhosted.org/packages/72/45/cb4671e13fed39f721066ad1a00714d4b607982b8d3e97a25f836198d1df/jupyter_mimetypes-$pkgver-py3-none-any.whl"
+)
+sha256sums=(
+    'e6dcd989258e3fc944365b656d9173191517e0e393bd878e97ce500e5b388527'
+)
 package() {
-    cd "jupyter_mimetypes-$pkgver"
-    python -m installer --destdir="$pkgdir" dist/*.whl
+    python -m installer \
+        --destdir="$pkgdir" \
+        "jupyter_mimetypes-$pkgver-py3-none-any.whl"
 }
