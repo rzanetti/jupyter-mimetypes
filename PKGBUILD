@@ -24,6 +24,10 @@ depends=(
     'python-typing_extensions'
 )
 
+optdepends=(
+    'ipython: display integration in IPython/Jupyter sessions'
+)
+
 makedepends=('python-installer')
 
 source=(

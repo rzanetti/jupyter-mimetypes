@@ -1,12 +1,12 @@
 # Jupyter MIME Types PKGBUILD
 
-A [Python](https://www.python.org) package that provides enhanced [Jupyter](https://jupyter.org) representation capabilities through proxy objects, enabling efficient [Apache Arrow-based](https://arrow.apache.org) serialization for [pandas](https://pandas.pydata.org) `DataFrames`/`Series` and [pickle-based serialization](https://docs.python.org/3/library/pickle.html) for generic Python objects in Jupyter environments (`PKGBUILD` package wrapper).
+A [Python](https://www.python.org) package that provides enhanced [Jupyter](https://jupyter.org) representation capabilities through proxy objects, enabling efficient [Apache Arrow-based](https://arrow.apache.org) serialization for [pandas](https://pandas.pydata.org) `DataFrames`/`Series` and [pickle-based serialization](https://docs.python.org/3/library/pickle.html) for generic Python objects in Jupyter environments.
 
 ## Why this package exists?
 
-This repository provides an [Arch Linux](https://archlinux.org) `PKGBUILD` for software that is not currently available in the [official repositories](https://wiki.archlinux.org/title/Official_repositories) or the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository).
+This repository provides an [Arch Linux](https://archlinux.org) `PKGBUILD` for software that is not currently available in the [official repositories](https://wiki.archlinux.org/title/Official_repositories).
 
-The goal is to make installation reproducible, auditable and compatible with standard Arch Linux packaging practices.
+The goal is to make installation reproducible, auditable, and compatible with standard Arch Linux packaging practices.
 
 ## Upstream project
 
@@ -25,7 +25,7 @@ Upstream source code:
 ## Installation
 
 ```bash
-git clone git clone https://aur.archlinux.org/python-jupyter-mimetypes.git
+git clone https://aur.archlinux.org/python-jupyter-mimetypes.git
 cd python-jupyter-mimetypes
 makepkg -si
 ```
